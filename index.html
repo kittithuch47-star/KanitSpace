@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kittithuch Chiangram | Portfolio (EdTech & Digital Media)</title>
 
-  <!-- SEO & Social Sharing Meta Tags -->
+  <!-- SEO & Social Sharing Meta Tags (รอใส่ Domain จริง) -->
   <meta property="og:title" content="Kittithuch Chiangram | Portfolio">
   <meta property="og:description" content="แฟ้มสะสมผลงาน กิตติธัช เชียงรัมย์ (คณิต) | Digital Technology for Education">
   <meta property="og:image" content="https://kanitspace.com/pic/218333.jpg">
@@ -23,6 +23,7 @@
   <style>
     body {
       font-family: 'Kanit', sans-serif;
+      background-color: #020617; /* Slate 950 */
     }
     .bg-gradient-hero {
       background: linear-gradient(135deg, #0b1a30 0%, #003b73 50%, #0074d9 100%);
@@ -43,6 +44,10 @@
       animation: pop-bounce 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     }
 
+    /* =========================================
+       Pure CSS: Animated Glowing Blobs 
+       (ดวงไฟแสงสีขยับด้านหลัง)
+       ========================================= */
     .bg-blob-container {
       position: fixed;
       top: 0;
@@ -56,13 +61,13 @@
     .blob-shape {
       position: absolute;
       border-radius: 50%;
-      filter: blur(100px);
-      opacity: 0.55; 
+      filter: blur(100px); /* ความเบลอของแสง */
+      opacity: 0.55; /* เพิ่มความสว่างให้ทะลุกระจกได้ */
     }
     .blob-cyan {
       width: 45vw;
       height: 45vw;
-      background-color: #06b6d4;
+      background-color: #06b6d4; /* สีฟ้า Cyan */
       top: -10%;
       left: -10%;
       animation: blob-pulse 10s ease-in-out infinite alternate;
@@ -70,7 +75,7 @@
     .blob-purple {
       width: 35vw;
       height: 35vw;
-      background-color: #a855f7;
+      background-color: #a855f7; /* สีม่วง Purple */
       bottom: -10%;
       right: -5%;
       animation: blob-pulse 12s ease-in-out infinite alternate-reverse;
@@ -78,7 +83,7 @@
     .blob-blue {
       width: 40vw;
       height: 40vw;
-      background-color: #3b82f6;
+      background-color: #3b82f6; /* สีน้ำเงิน Blue */
       top: 40%;
       left: 30%;
       animation: blob-pulse 14s ease-in-out infinite alternate;
@@ -214,9 +219,9 @@
     
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white relative" data-lang="th">
+<body class="text-slate-100 antialiased selection:bg-cyan-500 selection:text-white relative" data-lang="th">
 
-  <!-- Animated Background Blobs (แสงทะลุกระจก) -->
+  <!-- ==================== ANIMATED BACKGROUND BLOBS ==================== -->
   <div class="bg-blob-container">
     <div class="blob-shape blob-cyan"></div>
     <div class="blob-shape blob-purple"></div>
@@ -301,7 +306,6 @@
         </div>
 
         <div class="mt-5 flex justify-center md:justify-start">
-          <!-- เปลี่ยนจากเปิด Modal เดิม เป็นคลาส gallery-item เพื่อเปิดรูปภาพ Resume ผ่าน Lightbox -->
           <button class="gallery-item glow-container" data-images='["pic/resume-draft.jpg"]' data-caption-th="ประวัติส่วนตัว & เรซูเม่ (Kittithuch Chiangram)" data-caption-en="Full Profile & Resume (Kittithuch Chiangram)">
             <span class="glow"></span>
             <div class="glow-content font-medium text-sm flex items-center gap-2 group-hover:text-cyan-400">
@@ -327,7 +331,7 @@
   <div class="max-w-6xl mx-auto px-4 -mt-10 sm:-mt-12 relative z-20">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
       
-      <div class="bg-slate-900/95 backdrop-blur-xl border border-emerald-500/30 rounded-2xl p-5 sm:p-6 shadow-2xl shadow-black/50 flex flex-col xl:flex-row items-start xl:items-center justify-between gap-6 reveal-hidden reveal-up delay-100">
+      <div class="bg-slate-900/80 backdrop-blur-xl border border-emerald-500/30 rounded-2xl p-5 sm:p-6 shadow-2xl shadow-black/50 flex flex-col xl:flex-row items-start xl:items-center justify-between gap-6 reveal-hidden reveal-up delay-100">
         <div class="flex items-start sm:items-center gap-4 sm:gap-5 w-full">
           <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
             <svg class="w-7 h-7 sm:w-8 sm:h-8 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
@@ -348,7 +352,7 @@
         </div>
       </div>
 
-      <div class="bg-slate-900/95 backdrop-blur-xl border border-cyan-500/30 rounded-2xl p-5 sm:p-6 shadow-2xl shadow-black/50 flex flex-col xl:flex-row items-start xl:items-center justify-between gap-6 reveal-hidden reveal-up delay-200">
+      <div class="bg-slate-900/80 backdrop-blur-xl border border-cyan-500/30 rounded-2xl p-5 sm:p-6 shadow-2xl shadow-black/50 flex flex-col xl:flex-row items-start xl:items-center justify-between gap-6 reveal-hidden reveal-up delay-200">
         <div class="flex items-start sm:items-center gap-4 sm:gap-5 w-full">
           <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center flex-shrink-0">
             <svg class="w-7 h-7 sm:w-8 sm:h-8 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
@@ -383,7 +387,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Card 1 -->
-        <div class="bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 hover:bg-slate-800/90 transition group relative overflow-hidden reveal-hidden reveal-up">
+        <div class="bg-slate-900/60 backdrop-blur-lg border border-slate-700/50 rounded-2xl p-8 hover:border-cyan-500/50 hover:bg-slate-800/80 transition group relative overflow-hidden reveal-hidden reveal-up">
           <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 rounded-bl-full -z-0 transition group-hover:bg-cyan-500/10"></div>
           <div class="w-14 h-14 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/20 text-cyan-400 rounded-xl flex items-center justify-center mb-6 relative z-10">
             <svg class="w-7 h-7 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
@@ -400,7 +404,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl p-8 hover:border-purple-500/50 hover:bg-slate-800/90 transition group relative overflow-hidden reveal-hidden reveal-up delay-100">
+        <div class="bg-slate-900/60 backdrop-blur-lg border border-slate-700/50 rounded-2xl p-8 hover:border-purple-500/50 hover:bg-slate-800/80 transition group relative overflow-hidden reveal-hidden reveal-up delay-100">
           <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-bl-full -z-0 transition group-hover:bg-purple-500/10"></div>
           <div class="w-14 h-14 bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/20 text-purple-400 rounded-xl flex items-center justify-center mb-6 relative z-10">
             <svg class="w-7 h-7 text-purple-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
@@ -417,7 +421,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl p-8 hover:border-emerald-500/50 hover:bg-slate-800/90 transition group relative overflow-hidden reveal-hidden reveal-up delay-200">
+        <div class="bg-slate-900/60 backdrop-blur-lg border border-slate-700/50 rounded-2xl p-8 hover:border-emerald-500/50 hover:bg-slate-800/80 transition group relative overflow-hidden reveal-hidden reveal-up delay-200">
           <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-bl-full -z-0 transition group-hover:bg-emerald-500/10"></div>
           <div class="w-14 h-14 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 border border-emerald-500/20 text-emerald-400 rounded-xl flex items-center justify-center mb-6 relative z-10">
             <svg class="w-7 h-7 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
@@ -436,7 +440,7 @@
     </div>
   </section>
 
-  <section id="journey" class="py-20 bg-slate-900/50 px-4 border-y border-slate-800 relative z-10 backdrop-blur-sm">
+  <section id="journey" class="py-20 bg-slate-900/40 px-4 border-y border-slate-800/50 relative z-10 backdrop-blur-md">
     <div class="max-w-3xl mx-auto">
       <div class="text-center mb-16 reveal-hidden reveal-up">
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -454,7 +458,7 @@
           <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-cyan-500 border-4 border-slate-950 group-hover:scale-125 transition duration-300"></div>
           <span class="inline-block px-3 py-1 bg-cyan-500/10 text-cyan-400 rounded-md text-xs font-bold tracking-wider mb-2"><span class="lang-th">ปี 1 (2565)</span><span class="lang-en">Year 1 (2022)</span></span>
           <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors duration-300"><span class="lang-th">ก้าวแรกในสนามจริง สู่การเปิดรับประสบการณ์ใหม่</span><span class="lang-en">First Steps in the Real Field, Open to New Experiences</span></h3>
-          <p class="text-slate-400 text-sm md:text-base leading-relaxed bg-slate-950/80 backdrop-blur-sm p-5 rounded-xl border border-slate-800 group-hover:border-cyan-500/50 group-hover:bg-slate-800/80 transition-all duration-300 relative z-10">
+          <p class="text-slate-400 text-sm md:text-base leading-relaxed bg-slate-950/60 backdrop-blur-md p-5 rounded-xl border border-slate-700/50 group-hover:border-cyan-500/50 group-hover:bg-slate-900/80 transition-all duration-300 relative z-10">
             <span class="lang-th">เริ่มต้นสัมผัสบทบาทครูครั้งแรกด้วยการออกสังเกตการณ์สอนที่โรงเรียนนารีนุกูลเป็นเวลา 2 สัปดาห์ ได้เรียนรู้เทคนิคการจัดการชั้นเรียนและร่วมจัดกิจกรรม <strong class="text-cyan-400">Computer Smart Camp 2022</strong> ให้นักเรียนชั้น ม.1 นอกจากนี้ยังได้ออกภาคสนามไปพัฒนาระบบสารสนเทศที่โรงเรียนประชาสามัคคี และท้าทายตัวเองด้วยการรับหน้าที่พิธีกรครั้งแรกในค่ายกฎหมาย พ.ร.บ. คอมพิวเตอร์ ที่โรงเรียนเทศบาล 2 หนองบัว เป็นปีที่เปลี่ยนความกังวลให้กลายเป็นความมั่นใจในเส้นทางวิชาชีพครู</span>
             <span class="lang-en">Started my first teaching role with a 2-week observation at Narinukun School. Learned classroom management techniques and co-organized the <strong class="text-cyan-400">Computer Smart Camp 2022</strong> for 7th graders. I also participated in fieldwork developing an IT system for Prachasamakkee School and challenged myself with my first MC role at a Cyber Law Camp. It was a year that turned anxiety into confidence in my teaching career path.</span>
           </p>
@@ -464,7 +468,7 @@
           <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-blue-500 border-4 border-slate-950 group-hover:scale-125 transition duration-300"></div>
           <span class="inline-block px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-xs font-bold tracking-wider mb-2"><span class="lang-th">ปี 2</span><span class="lang-en">Year 2</span></span>
           <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors duration-300"><span class="lang-th">เติบโตผ่านความรับผิดชอบ ในบทบาทผู้อยู่เบื้องหลังความสำเร็จ</span><span class="lang-en">Growing Through Responsibility Behind the Scenes of Success</span></h3>
-          <p class="text-slate-400 text-sm md:text-base leading-relaxed bg-slate-950/80 backdrop-blur-sm p-5 rounded-xl border border-slate-800 group-hover:border-blue-500/50 group-hover:bg-slate-800/80 transition-all duration-300 relative z-10">
+          <p class="text-slate-400 text-sm md:text-base leading-relaxed bg-slate-950/60 backdrop-blur-md p-5 rounded-xl border border-slate-700/50 group-hover:border-blue-500/50 group-hover:bg-slate-900/80 transition-all duration-300 relative z-10">
             <span class="lang-th">กลับไปฝึกประสบการณ์วิชาชีพที่โรงเรียนนารีนุกูลอีกครั้ง แต่ได้ลงมือสอนจริงในรายวิชาเพิ่มเติมเกี่ยวกับการสร้างการ์ตูนให้น้อง ๆ ม.1 ควบคู่กับการช่วยงานกลุ่มสาระการเรียนรู้อย่างเต็มกำลัง เช่น เป็นวิทยากรด้านกราฟิกในค่ายคอมพิวเตอร์ และเตรียมป้ายงานมินิมาราธอนตั้งแต่ตีสาม ในรั้วมหาวิทยาลัยได้รับบทบาทเป็น <strong class="text-blue-400">กำลังหลักฝ่ายตัดต่อวิดีโอและถ่ายภาพ</strong> สำหรับงานรับน้องสาขา DTE รุ่น 17 โดยผลิตคลิปให้เสร็จภายใน 2 วัน ซึ่งสอนให้รู้จักการทำงานภายใต้ความกดดันและการเสียสละเพื่อส่วนรวม</span>
             <span class="lang-en">Returned for another practicum at Narinukun School, this time gaining hands-on teaching experience with a cartoon creation course for 7th graders. Extensively supported the department by serving as a graphic design speaker for the computer camp and preparing marathon event signage starting at 3 AM. At university, I acted as the <strong class="text-blue-400">core video editor and photographer</strong> for the DTE freshmen orientation, producing a video within 2 days, teaching me how to work under pressure and sacrifice for the team.</span>
           </p>
@@ -474,7 +478,7 @@
           <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-purple-500 border-4 border-slate-950 group-hover:scale-125 transition duration-300"></div>
           <span class="inline-block px-3 py-1 bg-purple-500/10 text-purple-400 rounded-md text-xs font-bold tracking-wider mb-2"><span class="lang-th">ปี 3</span><span class="lang-en">Year 3</span></span>
           <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-300 transition-colors duration-300"><span class="lang-th">พิสูจน์ศักยภาพบนเวทีระดับประเทศ และเปิดรับความหลากหลายในชั้นเรียน</span><span class="lang-en">Proving Potential Nationally & Embracing Classroom Diversity</span></h3>
-          <p class="text-slate-400 text-sm md:text-base leading-relaxed bg-slate-950/80 backdrop-blur-sm p-5 rounded-xl border border-slate-800 group-hover:border-purple-500/50 group-hover:bg-slate-800/80 transition-all duration-300 relative z-10">
+          <p class="text-slate-400 text-sm md:text-base leading-relaxed bg-slate-950/60 backdrop-blur-md p-5 rounded-xl border border-slate-700/50 group-hover:border-purple-500/50 group-hover:bg-slate-900/80 transition-all duration-300 relative z-10">
             <span class="lang-th">ย้ายมาฝึกประสบการณ์วิชาชีพที่โรงเรียนเตรียมอุดมศึกษาพัฒนาการ อุบลราชธานี โดยมี "พี่แซน" เป็นครูพี่เลี้ยง การเจอสภาพแวดล้อมใหม่ทำให้ได้เรียนรู้วิธีปรับการสอนเพื่อเข้าถึงนักเรียนที่มีความหลากหลาย รวมถึงเด็กพิเศษ โดยนำสิ่งที่เขาสนใจมาเชื่อมต่อกับบทเรียน ปีนี้กวาดความสำเร็จระดับชาติจากการเป็นฝ่ายตัดต่อหลักให้ทีม Kadchanan Production ทำหนังสั้นรณรงค์วิกฤตโลกร้อนจนคว้า <strong class="text-purple-400">รางวัลชนะเลิศระดับประเทศ</strong> ของเครือข่าย TNDR และก้าวข้ามความกลัวด้วยการขึ้นเวทีนำเสนองานวิจัยระดับภูมิภาค (NCCE 2025) ที่มหาวิทยาลัยราชภัฏมหาสารคาม</span>
             <span class="lang-en">Transferred for a practicum at Triam Udom Suksa Pattanakarn Ubon Ratchathani School. Facing a new environment taught me to adapt my teaching to diverse students, including special needs, by connecting their interests to the lessons. This year, I achieved national success as the main editor for "Kadchanan Production", winning <strong class="text-purple-400">1st Prize Nationwide</strong> in the TNDR global warming short film contest. Overcame my fears by presenting regional research on stage at NCCE 2025.</span>
           </p>
@@ -484,7 +488,7 @@
           <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-emerald-500 border-4 border-slate-950 shadow-[0_0_15px_rgba(16,185,129,0.3)] group-hover:scale-125 transition duration-300"></div>
           <span class="inline-block px-3 py-1 bg-emerald-500/10 text-emerald-400 rounded-md text-xs font-bold tracking-wider mb-2"><span class="lang-th">ปี 4 (ปัจจุบัน)</span><span class="lang-en">Year 4 (Present)</span></span>
           <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-300 transition-colors duration-300"><span class="lang-th">หล่อหลอมความผูกพัน พร้อมก้าวสู่โลกการทำงานจริงอย่างเต็มตัว</span><span class="lang-en">Forging Bonds, Ready to Step Fully into the Working World</span></h3>
-          <p class="text-slate-400 text-sm md:text-base leading-relaxed bg-slate-950/80 backdrop-blur-sm p-5 rounded-xl border border-emerald-500/30 group-hover:border-emerald-400/60 group-hover:bg-slate-800/80 transition-all duration-300 relative z-10">
+          <p class="text-slate-400 text-sm md:text-base leading-relaxed bg-slate-950/60 backdrop-blur-md p-5 rounded-xl border border-emerald-500/30 group-hover:border-emerald-400/60 group-hover:bg-slate-900/80 transition-all duration-300 relative z-10">
             <span class="lang-th">กลับมาฝึกสอนเต็มเวลาที่โรงเรียนเตรียมอุดมศึกษาพัฒนาการ อุบลราชธานี อีกครั้ง รับผิดชอบสอนวิชาการออกแบบและเทคโนโลยีให้นักเรียนชั้น ม.4 ทั้ง 10 ห้อง พร้อมนำนวัตกรรม <strong class="text-emerald-400">"เกมการ์ดประกอบรูปแบบ 5E"</strong> มาใช้วิจัยในชั้นเรียน ได้สัมผัสวิถีชีวิตครูแบบครบวงจร ตั้งแต่ยืนเวรตอนเช้า ซ่อมคอมพิวเตอร์ ไปจนถึงดูแลนักเรียนในขบวนแห่เทียนพรรษา ปิดท้ายด้วยการฝึกงานในสถานประกอบการจริงที่สตูดิโอถ่ายภาพพรีเวดดิ้งในบ้านเกิด เพื่อพัฒนาทักษะการถ่ายภาพระดับมืออาชีพและการสื่อสารกับลูกค้า เป็นการเตรียมพร้อมขั้นสุดเพื่อนำจิตวิญญาณครูและทักษะดิจิทัลไปใช้ในการทำงานจริง</span>
             <span class="lang-en">Returned for a full-time teaching practicum, teaching Design and Technology to ten 10th-grade classes and implementing a <strong class="text-emerald-400">"5E Board Game"</strong> innovation for classroom research. Experienced the full spectrum of a teacher's life, from morning duties and IT repairs to supervising students during the Candle Festival parade. Concluded with a professional internship at a local wedding photography studio to refine my professional photography and client communication skills, fully preparing me to apply my teaching spirit and digital skills in the real workplace.</span>
           </p>
@@ -508,17 +512,18 @@
         </div>
         <div class="flex flex-wrap gap-2">
           <button class="filter-btn px-4 py-2 bg-cyan-600 text-white rounded-lg text-sm font-medium shadow-md shadow-cyan-600/20 transition-all duration-300" data-filter="all"><span class="lang-th">ทั้งหมด</span><span class="lang-en">All</span></button>
-          <button class="filter-btn px-4 py-2 bg-slate-900/80 backdrop-blur-md border border-slate-700 text-slate-300 rounded-lg text-sm font-medium hover:bg-cyan-500/10 hover:text-cyan-400 hover:border-cyan-500/50 transition-all duration-300" data-filter="edu"><span class="lang-th">สายครู</span><span class="lang-en">Education</span></button>
-          <button class="filter-btn px-4 py-2 bg-slate-900/80 backdrop-blur-md border border-slate-700 text-slate-300 rounded-lg text-sm font-medium hover:bg-purple-500/10 hover:text-purple-400 hover:border-purple-500/50 transition-all duration-300" data-filter="it"><span class="lang-th">สายไอที</span><span class="lang-en">IT/Media</span></button>
+          <button class="filter-btn px-4 py-2 bg-slate-900/60 backdrop-blur-md border border-slate-700/50 text-slate-300 rounded-lg text-sm font-medium hover:bg-cyan-500/10 hover:text-cyan-400 hover:border-cyan-500/50 transition-all duration-300" data-filter="edu"><span class="lang-th">สายครู</span><span class="lang-en">Education</span></button>
+          <button class="filter-btn px-4 py-2 bg-slate-900/60 backdrop-blur-md border border-slate-700/50 text-slate-300 rounded-lg text-sm font-medium hover:bg-purple-500/10 hover:text-purple-400 hover:border-purple-500/50 transition-all duration-300" data-filter="it"><span class="lang-th">สายไอที</span><span class="lang-en">IT/Media</span></button>
         </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
         <!-- Card 1: Activities -->
-        <div class="portfolio-card bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-500/50 hover:-translate-y-1 transition-all duration-500 shadow-lg flex flex-col group reveal-hidden reveal-up" data-category="edu">
+        <div class="portfolio-card bg-slate-900/60 backdrop-blur-lg border border-slate-700/50 rounded-2xl overflow-hidden hover:border-cyan-500/50 hover:-translate-y-1 transition-all duration-500 shadow-lg flex flex-col group reveal-hidden reveal-up" data-category="edu">
           <div class="h-52 bg-slate-800 relative overflow-hidden">
-            <img src="school/com_114.jpeg" alt="Activities & Experiences" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/1e293b/38bdf8?text=Activities'">
+            <!-- แก้ไขนามสกุลเป็น .jpg ทั้งหมด -->
+            <img src="school/com_114.jpg" alt="Activities & Experiences" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/1e293b/38bdf8?text=Activities'">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-80"></div>
             <span class="absolute top-4 right-4 px-3 py-1 bg-cyan-500 text-slate-950 rounded-full text-xs font-bold shadow-lg"><span class="lang-th">การศึกษา & กิจกรรม</span><span class="lang-en">Education & Activities</span></span>
           </div>
@@ -535,7 +540,7 @@
         </div>
 
         <!-- Card 2: Short Film -->
-        <div class="portfolio-card bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl overflow-hidden hover:border-purple-500/50 hover:-translate-y-1 transition-all duration-500 shadow-lg flex flex-col group reveal-hidden reveal-up delay-100" data-category="it">
+        <div class="portfolio-card bg-slate-900/60 backdrop-blur-lg border border-slate-700/50 rounded-2xl overflow-hidden hover:border-purple-500/50 hover:-translate-y-1 transition-all duration-500 shadow-lg flex flex-col group reveal-hidden reveal-up delay-100" data-category="it">
           <div class="h-52 bg-slate-800 relative overflow-hidden flex items-center justify-center">
             <img src="pic/IMG_2924.jpg" alt="Short Film Award" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-70" onerror="this.src='https://placehold.co/600x400/2e1065/c084fc?text=Short+Film+Project'">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent"></div>
@@ -560,9 +565,9 @@
         </div>
 
         <!-- Card 3: Research -->
-        <div id="portfolio-tech" class="portfolio-card bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl overflow-hidden hover:border-emerald-500/50 hover:-translate-y-1 transition-all duration-500 shadow-lg flex flex-col group reveal-hidden reveal-up delay-200" data-category="edu it">
+        <div id="portfolio-tech" class="portfolio-card bg-slate-900/60 backdrop-blur-lg border border-slate-700/50 rounded-2xl overflow-hidden hover:border-emerald-500/50 hover:-translate-y-1 transition-all duration-500 shadow-lg flex flex-col group reveal-hidden reveal-up delay-200" data-category="edu it">
           <div class="h-52 bg-slate-800 relative overflow-hidden flex items-center justify-center">
-            <img src="pic/IMG_6872.JPG" alt="Research Presentation" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-70" onerror="this.src='https://placehold.co/600x400/064e3b/34d399?text=Research+&+Innovation'">
+            <img src="pic/IMG_6872.jpg" alt="Research Presentation" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-70" onerror="this.src='https://placehold.co/600x400/064e3b/34d399?text=Research+&+Innovation'">
             <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
                 <span class="text-5xl font-black text-white/20 tracking-widest uppercase transform -rotate-12 backdrop-blur-[2px] p-2 rounded-lg mix-blend-overlay">Research</span>
             </div>
@@ -579,7 +584,7 @@
         </div>
 
         <!-- Card 4: Graphic Design -->
-        <div class="portfolio-card bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl overflow-hidden hover:border-pink-500/50 hover:-translate-y-1 transition-all duration-500 shadow-lg flex flex-col group reveal-hidden reveal-up" data-category="it">
+        <div class="portfolio-card bg-slate-900/60 backdrop-blur-lg border border-slate-700/50 rounded-2xl overflow-hidden hover:border-pink-500/50 hover:-translate-y-1 transition-all duration-500 shadow-lg flex flex-col group reveal-hidden reveal-up" data-category="it">
           <div class="h-52 bg-slate-800 relative overflow-hidden flex items-center justify-center">
             <img src="grafic/gr_1.jpg" alt="Graphic Design" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-60 mix-blend-screen" onerror="this.src='https://placehold.co/600x400/831843/f472b6?text=Graphic+Design'">
             <div class="absolute inset-0 bg-gradient-to-tr from-pink-900/60 to-purple-900/40 mix-blend-multiply"></div>
@@ -605,7 +610,7 @@
         </div>
 
         <!-- Card 5: Photobook -->
-        <div class="portfolio-card bg-slate-900/80 backdrop-blur-md border border-slate-800 rounded-2xl overflow-hidden hover:border-amber-500/50 hover:-translate-y-1 transition-all duration-500 shadow-lg flex flex-col group reveal-hidden reveal-up delay-100" data-category="it">
+        <div class="portfolio-card bg-slate-900/60 backdrop-blur-lg border border-slate-700/50 rounded-2xl overflow-hidden hover:border-amber-500/50 hover:-translate-y-1 transition-all duration-500 shadow-lg flex flex-col group reveal-hidden reveal-up delay-100" data-category="it">
           <div class="h-52 w-full bg-slate-800 relative overflow-hidden group-hover:scale-[1.02] transition duration-500">
             <iframe allowfullscreen allow="autoplay; fullscreen; clipboard-write" scrolling="no" style="width: 100%; height: 100%; border: 0;" class="absolute inset-0 z-10" src="https://heyzine.com/flip-book/1ed20995ba.html"></iframe>
             <span class="absolute top-4 right-4 px-3 py-1 bg-amber-500 text-slate-950 rounded-full text-xs font-bold shadow-lg z-20 pointer-events-none"><span class="lang-th">ถ่ายภาพ</span><span class="lang-en">Photography</span></span>
@@ -626,13 +631,14 @@
     </div>
   </section>
 
-  <footer id="contact" class="py-16 bg-slate-900 border-t border-slate-800 px-4 text-center relative z-10">
+  <footer id="contact" class="py-16 border-t border-slate-800/50 px-4 text-center relative z-10 backdrop-blur-md bg-slate-900/40">
     <div class="max-w-2xl mx-auto">
       <h2 class="text-3xl font-bold text-white mb-8 reveal-hidden reveal-up">
         <span class="lang-th">ช่องทางการติดต่อ</span><span class="lang-en">Contact Channels</span>
       </h2>
 
-      <div class="bg-slate-950/80 backdrop-blur-md p-8 rounded-2xl border border-slate-800 flex flex-col items-center reveal-hidden reveal-up delay-100 shadow-[0_0_20px_rgba(0,0,0,0.3)]">
+      <div class="bg-slate-950/60 backdrop-blur-lg p-8 rounded-2xl border border-slate-700/50 flex flex-col items-center reveal-hidden reveal-up delay-100 shadow-[0_0_20px_rgba(0,0,0,0.3)]">
+           <!-- ลบข้อมูลมหาวิทยาลัยออกไปแล้ว เหลือแต่ที่อยู่ และเพิ่มระยะห่างด้านล่าง (mb-8) -->
            <div class="text-slate-400 text-sm mb-8 flex items-start text-left w-full max-w-md">
              <div class="flex-shrink-0 mt-0.5 mr-3">
                <svg class="w-5 h-5 text-cyan-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -641,15 +647,15 @@
            </div>
            
            <div class="w-full max-w-md flex flex-col gap-3">
-             <a href="mailto:kittithuch47@gmail.com" class="px-4 py-3 bg-slate-800/80 hover:bg-red-500/10 text-slate-300 hover:text-red-400 font-semibold rounded-xl border border-slate-700 hover:border-red-500/50 transition-all duration-300 flex items-center justify-center gap-3">
+             <a href="mailto:kittithuch47@gmail.com" class="px-4 py-3 bg-slate-800/60 backdrop-blur-md hover:bg-red-500/10 text-slate-300 hover:text-red-400 font-semibold rounded-xl border border-slate-700/50 hover:border-red-500/50 transition-all duration-300 flex items-center justify-center gap-3">
                <svg class="w-5 h-5 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                <span class="lang-th">ส่งอีเมล (kittithuch47@gmail.com)</span><span class="lang-en">Send Email (kittithuch47@gmail.com)</span>
              </a>
-             <a href="https://www.facebook.com/share/19Zjdo7BY4/?mibextid=wwXIfr" target="_blank" class="px-4 py-3 bg-slate-800/80 hover:bg-blue-500/10 text-slate-300 hover:text-blue-400 font-semibold rounded-xl border border-slate-700 hover:border-blue-500/50 transition-all duration-300 flex items-center justify-center gap-3">
+             <a href="https://www.facebook.com/share/19Zjdo7BY4/?mibextid=wwXIfr" target="_blank" class="px-4 py-3 bg-slate-800/60 backdrop-blur-md hover:bg-blue-500/10 text-slate-300 hover:text-blue-400 font-semibold rounded-xl border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 flex items-center justify-center gap-3">
                <svg class="w-5 h-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                <span class="lang-th">ติดต่อทาง Facebook</span><span class="lang-en">Contact via Facebook</span>
              </a>
-             <a href="https://line.me/ti/p/hOvVl4i-wy" target="_blank" class="px-4 py-3 bg-slate-800/80 hover:bg-green-500/10 text-slate-300 hover:text-green-400 font-semibold rounded-xl border border-slate-700 hover:border-green-500/50 transition-all duration-300 flex items-center justify-center gap-3">
+             <a href="https://line.me/ti/p/hOvVl4i-wy" target="_blank" class="px-4 py-3 bg-slate-800/60 backdrop-blur-md hover:bg-green-500/10 text-slate-300 hover:text-green-400 font-semibold rounded-xl border border-slate-700/50 hover:border-green-500/50 transition-all duration-300 flex items-center justify-center gap-3">
                <svg class="w-5 h-5 text-green-500" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349.0.63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349.0.63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345.0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346.0.627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .26-.156.479-.379.582-.073.033-.153.05-.233.05-.164.0-.324-.066-.441-.19l-2.36-2.585v2.146c0 .344-.281.629-.629.629-.345.0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.262.0.485.158.587.382.03.072.046.151.046.229.0.163-.064.321-.186.438l2.36 2.586V8.108c0-.345.282-.63.63-.63.345.0.63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345.0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349.0.631.285.631.63v4.771zm-2.456-1.884h-1.76v1.884c0 .344-.281.629-.629.629-.344.0-.629-.285-.629-.629V8.108c0-.345.285-.63.629-.63h2.389c.345.0.627.285.627.63 0 .349-.282.63-.627.63h-1.76v1.125h1.76c.344.0.627.283.627.63 0 .344-.283.629-.627.629m9.771-7.925H6.918c-2.735.0-4.961 2.227-4.961 4.961v4.961c0 2.735 2.226 4.961 4.961 4.961h1.49l1.621 1.621c.143.143.332.222.535.222.106.0.213-.021.314-.066.27-.12.441-.392.441-.689v-1.149h5.763c2.735.0 4.961-2.226 4.961-4.961v-4.961c0-2.734-2.226-4.961-4.961-4.961"/></svg>
                <span class="lang-th">เพิ่มเพื่อนทาง Line</span><span class="lang-en">Add Friend on LINE</span>
              </a>
@@ -740,10 +746,11 @@
           <p class="text-slate-400"><span class="lang-th">รวมภาพบรรยากาศการทำงาน การเป็นวิทยากร และการทำกิจกรรมต่างๆ (คลิกที่ภาพเพื่อขยาย)</span><span class="lang-en">A collection of working atmospheres, speaking engagements, and activities. (Click to enlarge)</span></p>
         </div>
 
+        <!-- แก้ไขนามสกุลเป็น .jpg ทั้งหมด -->
         <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
           <!-- Item 1 -->
           <div class="break-inside-avoid relative group cursor-pointer rounded-xl overflow-hidden gallery-item shadow-md"
-               data-images='["pic/p1_1.jpg", "pic/p1_2.jpg", "pic/p1_3.JPG"]'
+               data-images='["pic/p1_1.jpg", "pic/p1_2.jpg", "pic/p1_3.jpg"]'
                data-caption-th='รับหน้าที่เป็นวิทยากรด้านกราฟิก เป็นครั้งแรกที่ได้ยืนต่อหน้านักเรียนในฐานะวิทยากรงาน คอมพิวเตอร์สมาร์ทแคมป์ 2023'
                data-caption-en='Served as a graphic design speaker at Computer Smart Camp 2023. My first time speaking in front of students.'>
             <img src="pic/p1_1.jpg" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x600/0f172a/06b6d4?text=Gallery'">
@@ -756,10 +763,10 @@
 
           <!-- Item 2 -->
           <div class="break-inside-avoid relative group cursor-pointer rounded-xl overflow-hidden gallery-item shadow-md"
-               data-images='["pic/p2_1.JPG", "pic/p2_2.JPG", "pic/p2_3.JPG", "pic/p2_4.JPG", "pic/p2_5.JPG", "pic/p2_6.JPG"]'
+               data-images='["pic/p2_1.jpg", "pic/p2_2.jpg", "pic/p2_3.jpg", "pic/p2_4.jpg", "pic/p2_5.jpg", "pic/p2_6.jpg"]'
                data-caption-th='รับหน้าที่เป็นวิทยากรกิจกรรมค่ายรู้เท่าทันสื่อ ณ โรงเรียนเทศบาล 2 หนองบัว อำเภอเมือง จังหวัดอุบลราชธานี'
                data-caption-en='Media Literacy Camp Speaker at Municipal School 2, Nong Bua, Ubon Ratchathani.'>
-            <img src="pic/p2_1.JPG" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x600/0f172a/06b6d4?text=Gallery'">
+            <img src="pic/p2_1.jpg" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x600/0f172a/06b6d4?text=Gallery'">
             <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs font-semibold px-2 py-1 rounded-md flex items-center gap-1 z-10"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>+5</span></div>
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
               <span class="text-white text-sm font-medium p-4 translate-y-4 group-hover:translate-y-0 transition duration-300 pointer-events-none lang-th">รับหน้าที่เป็นวิทยากรกิจกรรมค่ายรู้เท่าทันสื่อ ณ โรงเรียนเทศบาล 2 หนองบัว อำเภอเมือง จังหวัดอุบลราชธานี</span>
@@ -769,10 +776,10 @@
 
           <!-- Item 3 -->
           <div class="break-inside-avoid relative group cursor-pointer rounded-xl overflow-hidden gallery-item shadow-md"
-               data-images='["pic/p3_1.JPG", "pic/p3_2.JPG", "pic/p3_3.JPG"]'
+               data-images='["pic/p3_1.jpg", "pic/p3_2.jpg", "pic/p3_3.jpg"]'
                data-caption-th='ได้รับคัดเลือกจากอาจารย์ให้เป็นตัวแทนไปนำเสนองานวิจัยบนเวที NCCE 2025 (คอมพิวเตอร์ศึกษาสัมพันธ์แห่งภาคอีสาน ครั้งที่ 12) ณ มหาวิทยาลัยราชภัฏมหาสารคาม'
                data-caption-en='Selected to represent and present research on the NCCE 2025 stage at Rajabhat Maha Sarakham University.'>
-            <img src="pic/p3_1.JPG" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x600/0f172a/06b6d4?text=Gallery'">
+            <img src="pic/p3_1.jpg" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x600/0f172a/06b6d4?text=Gallery'">
             <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs font-semibold px-2 py-1 rounded-md flex items-center gap-1 z-10"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>+2</span></div>
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
               <span class="text-white text-sm font-medium p-4 translate-y-4 group-hover:translate-y-0 transition duration-300 pointer-events-none lang-th">ได้รับคัดเลือกเป็นตัวแทนไปนำเสนองานวิจัยบนเวที NCCE 2025</span>
@@ -782,10 +789,10 @@
 
           <!-- Item 4 -->
           <div class="break-inside-avoid relative group cursor-pointer rounded-xl overflow-hidden gallery-item shadow-md"
-               data-images='["pic/p4_1.JPG", "pic/p4_2.JPG", "pic/p4_3.JPG"]'
+               data-images='["pic/p4_1.jpg", "pic/p4_2.jpg", "pic/p4_3.jpg"]'
                data-caption-th='ความภูมิใจที่สุดของผมคือการได้ร่วมมือกับเพื่อนๆ ในนามกองถ่าย "Kadchanan Production" เพื่อสร้างสรรค์ผลงานในรายวิชา จนก้าวไปสู่ความสำเร็จในระดับประเทศ'
                data-caption-en='Proudly collaborated with friends in "Kadchanan Production" to create course projects that led to national success.'>
-            <img src="pic/p4_1.JPG" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x600/0f172a/06b6d4?text=Gallery'">
+            <img src="pic/p4_1.jpg" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x600/0f172a/06b6d4?text=Gallery'">
             <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs font-semibold px-2 py-1 rounded-md flex items-center gap-1 z-10"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>+2</span></div>
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
               <span class="text-white text-sm font-medium p-4 translate-y-4 group-hover:translate-y-0 transition duration-300 pointer-events-none lang-th">ผลงานสร้างสรรค์ในนามกองถ่าย "Kadchanan Production"</span>
@@ -795,10 +802,10 @@
 
           <!-- Item 5 -->
           <div class="break-inside-avoid relative group cursor-pointer rounded-xl overflow-hidden gallery-item shadow-md"
-               data-images='["pic/p5_2.JPG", "pic/p5_3.JPG"]'
+               data-images='["pic/p5_1.jpg", "pic/p5_2.jpg", "pic/p5_3.jpg"]'
                data-caption-th='โครงการคัดเลือกใช้สื่อและเทคโนโลยีดิจิทัลฯ เป็นกิจกรรมที่ผมได้มีโอกาสเป็นผู้ช่วยวิทยากรคอยสนับสนุนอาจารย์ โดยทำหน้าที่ให้คำแนะนำเชิงเทคนิคแก่คุณครูที่มาอบรม'
                data-caption-en='Acted as an assistant speaker, supporting teachers with technical guidance during a digital media integration workshop.'>
-            <img src="pic/p5_2.JPG" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x600/0f172a/06b6d4?text=Gallery'">
+            <img src="pic/p5_1.jpg" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x600/0f172a/06b6d4?text=Gallery'">
             <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs font-semibold px-2 py-1 rounded-md flex items-center gap-1 z-10"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>+2</span></div>
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
               <span class="text-white text-sm font-medium p-4 translate-y-4 group-hover:translate-y-0 transition duration-300 pointer-events-none lang-th">ผู้ช่วยวิทยากรโครงการคัดเลือกใช้สื่อและเทคโนโลยีดิจิทัลฯ</span>
@@ -808,10 +815,10 @@
 
           <!-- Item 6: University -->
           <div class="break-inside-avoid relative group cursor-pointer rounded-xl overflow-hidden gallery-item shadow-md"
-               data-images='["univercity/uni_1.JPG", "univercity/uni_2.JPG", "univercity/uni_3.JPEG", "univercity/uni_4.jpg", "univercity/uni_5.JPG", "univercity/uni_6.JPG", "univercity/uni_7.JPG", "univercity/uni_8.JPG", "univercity/uni_9.JPG", "univercity/uni_10.JPG", "univercity/uni_11.JPG", "univercity/uni_12.JPG", "univercity/uni_13.JPG", "univercity/uni_14.JPEG", "univercity/uni_15.jpg", "univercity/uni_16.jpg", "univercity/uni_17.JPG", "univercity/uni_18.JPG", "univercity/uni_19.JPG", "univercity/uni_20.jpg", "univercity/uni_21.JPG", "univercity/uni_22.jpg", "univercity/uni_23.JPG", "univercity/uni_24.JPG", "univercity/uni_25.jpg", "univercity/uni_26.jpg", "univercity/uni_27.JPG", "univercity/uni_28.JPG", "univercity/uni_29.JPG", "univercity/uni_30.JPG", "univercity/uni_31.JPG", "univercity/uni_32.JPEG", "univercity/uni_33.JPEG"]'
+               data-images='["univercity/uni_1.jpg", "univercity/uni_2.jpg", "univercity/uni_3.jpg", "univercity/uni_4.jpg", "univercity/uni_5.jpg", "univercity/uni_6.jpg", "univercity/uni_7.jpg", "univercity/uni_8.jpg", "univercity/uni_9.jpg", "univercity/uni_10.jpg", "univercity/uni_11.jpg", "univercity/uni_12.jpg", "univercity/uni_13.jpg", "univercity/uni_14.jpg", "univercity/uni_15.jpg", "univercity/uni_16.jpg", "univercity/uni_17.jpg", "univercity/uni_18.jpg", "univercity/uni_19.jpg", "univercity/uni_20.jpg", "univercity/uni_21.jpg", "univercity/uni_22.jpg", "univercity/uni_23.jpg", "univercity/uni_24.jpg", "univercity/uni_25.jpg", "univercity/uni_26.jpg", "univercity/uni_27.jpg", "univercity/uni_28.jpg", "univercity/uni_29.jpg", "univercity/uni_30.jpg", "univercity/uni_31.jpg", "univercity/uni_32.jpg", "univercity/uni_33.jpg"]'
                data-caption-th='ภาพบรรยากาศการทำกิจกรรมต่างๆ ภายในรั้วมหาวิทยาลัย ที่ช่วยหล่อหลอมทักษะการทำงานเป็นทีม การแก้ปัญหาเฉพาะหน้า และความเป็นผู้นำ'
                data-caption-en='Various activities inside the university that shaped my teamwork, problem-solving, and leadership skills.'>
-            <img src="univercity/uni_31.JPG" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x600/0f172a/06b6d4?text=Gallery'">
+            <img src="univercity/uni_31.jpg" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x600/0f172a/06b6d4?text=Gallery'">
             <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs font-semibold px-2 py-1 rounded-md flex items-center gap-1 z-10"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>+32</span></div>
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
               <span class="text-white text-sm font-medium p-4 translate-y-4 group-hover:translate-y-0 transition duration-300 pointer-events-none lang-th">กิจกรรมและการเรียนรู้ภายในรั้วมหาวิทยาลัย</span>
@@ -821,10 +828,10 @@
 
           <!-- Item 7: Education -->
           <div class="break-inside-avoid relative group cursor-pointer rounded-xl overflow-hidden gallery-item shadow-md"
-               data-images='["Student/edu_1.JPG", "Student/edu_2.JPG", "Student/edu_3.JPG", "Student/edu_4.jpg", "Student/edu_5.jpg", "Student/edu_6.jpg", "Student/edu_7.JPG", "Student/edu_8.jpg", "Student/edu_9.JPG", "Student/edu_10.JPG", "Student/edu_11.jpg", "Student/edu_12.jpg", "Student/edu_13.jpg", "Student/edu_14.jpg", "Student/edu_15.jpg", "Student/edu_16.JPG", "Student/edu_17.JPG", "Student/edu_18.JPG", "Student/edu_19.JPG", "Student/edu_20.jpg", "Student/edu_21.jpg", "Student/edu_22.jpg", "Student/edu_23.jpg", "Student/edu_24.jpg", "Student/edu_25.jpg", "Student/edu_26.jpg", "Student/edu_27.jpg", "Student/edu_28.jpg", "Student/edu_29.jpg", "Student/edu_30.jpg", "Student/edu_31.jpg", "Student/edu_32.jpg", "Student/edu_33.jpg", "Student/edu_34.jpg"]'
+               data-images='["Student/edu_1.jpg", "Student/edu_2.jpg", "Student/edu_3.jpg", "Student/edu_4.jpg", "Student/edu_5.jpg", "Student/edu_6.jpg", "Student/edu_7.jpg", "Student/edu_8.jpg", "Student/edu_9.jpg", "Student/edu_10.jpg", "Student/edu_11.jpg", "Student/edu_12.jpg", "Student/edu_13.jpg", "Student/edu_14.jpg", "Student/edu_15.jpg", "Student/edu_16.jpg", "Student/edu_17.jpg", "Student/edu_18.jpg", "Student/edu_19.jpg", "Student/edu_20.jpg", "Student/edu_21.jpg", "Student/edu_22.jpg", "Student/edu_23.jpg", "Student/edu_24.jpg", "Student/edu_25.jpg", "Student/edu_26.jpg", "Student/edu_27.jpg", "Student/edu_28.jpg", "Student/edu_29.jpg", "Student/edu_30.jpg", "Student/edu_31.jpg", "Student/edu_32.jpg", "Student/edu_33.jpg", "Student/edu_34.jpg"]'
                data-caption-th='บรรยากาศการจัดการเรียนรู้ในห้องเรียน การใช้นวัตกรรมและสื่อเทคโนโลยีเพื่อกระตุ้นความสนใจของผู้เรียน (Active Learning)'
                data-caption-en='Active learning atmosphere in the classroom, using innovation and media tech to engage students.'>
-            <img src="Student/edu_16.JPG" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x600/0f172a/10b981?text=Gallery'">
+            <img src="Student/edu_16.jpg" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/800x600/0f172a/10b981?text=Gallery'">
             <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs font-semibold px-2 py-1 rounded-md flex items-center gap-1 z-10"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>+33</span></div>
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
               <span class="text-white text-sm font-medium p-4 translate-y-4 group-hover:translate-y-0 transition duration-300 pointer-events-none lang-th">บรรยากาศการจัดการเรียนรู้ในห้องเรียน (Active Learning)</span>
@@ -834,10 +841,10 @@
 
           <!-- Item 8: School & Community -->
           <div class="break-inside-avoid relative group cursor-pointer rounded-xl overflow-hidden gallery-item shadow-md"
-               data-images='["school/com_114.JPEG", "school/com_11.JPG", "school/com_13.JPG", "school/com_15.jpg", "school/com_16.JPEG", "school/com_17.JPEG", "school/com_18.jpg", "school/com_110.jpg", "school/com_111.JPG", "school/com_113.jpg", "school/com_121.jpg", "school/com_123.JPG", "school/com_129.jpg", "school/com_131.jpg", "school/com_139.jpg", "school/com_140.jpg", "school/com_141.jpg", "school/com_142.jpg", "school/com_144.jpg", "school/com_145.JPG", "school/com_147.jpg", "school/com_148.jpg", "school/com_149.jpg", "school/com_150.JPEG", "school/com_151.JPEG", "school/com_152.JPG", "school/com_153.JPEG", "school/com_154.JPG", "school/com_155.jpg", "school/com_156.jpg", "school/com_157.jpg", "school/com_158.jpg", "school/com_159.jpg", "school/com_160.jpg", "school/com_161.JPG"]'
+               data-images='["school/com_114.jpg", "school/com_11.jpg", "school/com_13.jpg", "school/com_15.jpg", "school/com_16.jpg", "school/com_17.jpg", "school/com_18.jpg", "school/com_110.jpg", "school/com_111.jpg", "school/com_113.jpg", "school/com_121.jpg", "school/com_123.jpg", "school/com_129.jpg", "school/com_131.jpg", "school/com_139.jpg", "school/com_140.jpg", "school/com_141.jpg", "school/com_142.jpg", "school/com_144.jpg", "school/com_145.jpg", "school/com_147.jpg", "school/com_148.jpg", "school/com_149.jpg", "school/com_150.jpg", "school/com_151.jpg", "school/com_152.jpg", "school/com_153.jpg", "school/com_154.jpg", "school/com_155.jpg", "school/com_156.jpg", "school/com_157.jpg", "school/com_158.jpg", "school/com_159.jpg", "school/com_160.jpg", "school/com_161.jpg"]'
                data-caption-th='ประมวลภาพกิจกรรมต่างๆ ในสถานศึกษาและชุมชน เช่น การจัดกิจกรรมจิตอาสา การดูแลระบบโสตทัศนูปกรณ์ และการร่วมงานสำคัญต่างๆ ของโรงเรียน'
                data-caption-en='Various activities in schools and communities, including volunteer work, AV system support, and major school events.'>
-            <img src="school/com_114.JPEG" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x450/0f172a/f59e0b?text=Gallery'">
+            <img src="school/com_114.jpg" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x450/0f172a/f59e0b?text=Gallery'">
             <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs font-semibold px-2 py-1 rounded-md flex items-center gap-1 z-10"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span>+34</span></div>
             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
               <span class="text-white text-sm font-medium p-4 translate-y-4 group-hover:translate-y-0 transition duration-300 pointer-events-none lang-th">ประมวลภาพกิจกรรมต่างๆ ในสถานศึกษาและชุมชน</span>
@@ -847,7 +854,7 @@
 
           <!-- Item 9: Internship -->
           <div class="break-inside-avoid relative group cursor-pointer rounded-xl overflow-hidden gallery-item shadow-md"
-               data-images='["office/of_1.JPEG", "office/of_2.jpg", "office/of_3.jpg", "office/of_4.JPG", "office/of_5.JPG", "office/of_6.jpg", "office/of_7.jpg", "office/of_8.jpg", "office/of_9.jpg"]'
+               data-images='["office/of_1.jpg", "office/of_2.jpg", "office/of_3.jpg", "office/of_4.jpg", "office/of_5.jpg", "office/of_6.jpg", "office/of_7.jpg", "office/of_8.jpg", "office/of_9.jpg"]'
                data-caption-th='การฝึกประสบการณ์ในสถานประกอบการจริง (ร้านถ่ายภาพ) เพื่อเรียนรู้ทักษะการถ่ายภาพระดับมืออาชีพและการสื่อสารกับลูกค้า'
                data-caption-en='Professional internship at a photography studio to learn pro photography and client communication skills.'>
             <img src="office/of_2.jpg" alt="Gallery item" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x600/0f172a/8b5cf6?text=Gallery'">
@@ -905,14 +912,13 @@
       btnTh.addEventListener('click', () => setLanguage('th'));
       btnEn.addEventListener('click', () => setLanguage('en'));
 
-      // Scroll Reveal Animation (Always animates)
+      // Scroll Reveal Animation
       const revealElements = document.querySelectorAll('.reveal-hidden');
       const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('reveal-visible');
           } else {
-            // Remove the class when it leaves the screen, so it animates again when coming back
             entry.target.classList.remove('reveal-visible');
           }
         });
@@ -928,9 +934,9 @@
         btn.addEventListener('click', () => {
           filterBtns.forEach(b => {
             b.classList.remove('bg-cyan-600', 'text-white', 'shadow-md', 'shadow-cyan-600/20');
-            b.classList.add('bg-slate-900/80', 'text-slate-300');
+            b.classList.add('bg-slate-900/60', 'text-slate-300');
           });
-          btn.classList.remove('bg-slate-900/80', 'text-slate-300');
+          btn.classList.remove('bg-slate-900/60', 'text-slate-300');
           btn.classList.add('bg-cyan-600', 'text-white', 'shadow-md', 'shadow-cyan-600/20');
 
           const filterValue = btn.getAttribute('data-filter');
@@ -1008,7 +1014,7 @@
       setupModal('openMediaModalBtn', 'closeMediaModalBtn', 'mediaModal', 'mediaContainer');
       setupModal('openGalleryModalBtn', 'closeGalleryModalBtn', 'galleryModal', 'galleryContainer');
 
-      // Lightbox Logic (Also handles the new Resume button)
+      // Lightbox Logic 
       const lightboxOverlay = document.getElementById('lightboxOverlay');
       const closeLightboxBtn = document.getElementById('closeLightboxBtn');
       const lightboxImage = document.getElementById('lightboxImage');
